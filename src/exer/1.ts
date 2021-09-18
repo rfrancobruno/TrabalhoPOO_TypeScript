@@ -1,6 +1,4 @@
 
-//yarn tsc --watch
-
 /*
     -Crie uma classe Pessoa com os atributos nome, sexo e idade. 
     -Crie os getters e setters. 
@@ -60,9 +58,9 @@ class Pessoa {
     // Método da classe Pessoa para retornar se a pessoa é maior ou menor de idade:
     public verificaMaiorIdade() {
         if(this.idade >= 18) {
-           return 'PESSOA MAIOR DE IDADE.'
+           return ' MAIOR DE IDADE.'
         } else {
-            return 'PESSOA MENOR DE IDADE'
+            return ' MENOR DE IDADE'
         }
     }
 
@@ -77,14 +75,16 @@ try {
     console.log('-- DESCRIÇÃO DA PESSOA: -------------------------------------------')
     pessoa.nome = 'Fabiana'
     pessoa.sexo = 'Feminino'
-    pessoa.idade = 18
+    pessoa.idade = 17
     console.log(pessoa)
-    console.log(pessoa.verificaMaiorIdade())
+    console.log(` ${pessoa.nome} é ${pessoa.verificaMaiorIdade()}`)
 
     console.log()
 
 } catch (err: any) { 
     console.error(err.message)
+
+    console.log()
 }
 
 
